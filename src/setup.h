@@ -1,7 +1,7 @@
 //Setup your credentials and mqtt info here:
 //only change the value between the " " leave the rest of the line untouched.
-#define WIFI_SSID "SSID"//**Your SSID here**
-#define WIFI_PWD "password"//**Your password here** leave empty if open (bad!)
+#define WIFI_SSID "n29f73"//**Your SSID here**
+#define WIFI_PWD "X#!7F;+wX5Q7"//**Your password here** leave empty if open (bad!)
 
 //Uncomment this to set a static IP instead of DHCP for the ESP (Separate by commas instead of dots)
 //#define WIFI_IP 192, 168, 0, 5
@@ -10,13 +10,13 @@
 //#define WIFI_PRIMARY_DNS 8, 8, 8, 8     //A DNS address is needed, even if it's not used 
 //#define WIFI_SECONDARY_DNS 8, 8, 4, 4   //A DNS address is needed, even if it's not used
 
-#define MQTT_SERVER "192.168.1.4"//**IP address here of your MQTT server**
-#define MQTT_USERNAME ""//leave empty if not set (bad!)
-#define MQTT_PASSWORD ""//leave empty if not set (bad!)
+#define MQTT_SERVER "homeassistant.local"//**IP address here of your MQTT server**
+#define MQTT_USERNAME "mqtt_user"//leave empty if not set (bad!)
+#define MQTT_PASSWORD "44etn6027"//leave empty if not set (bad!)
 #define MQTT_PORT 1883
 //#define MQTT_ENCRYPTED // uncomment if MQTT connection is encrypted via TLS
 
-#define FREQUENCY 30000 //query values every 30 sec
+#define FREQUENCY 10000 //query values every 30 sec
 
 #if defined(ARDUINO_M5Stick_C) || defined(ARDUINO_M5Stick_C_Plus) || defined(ARDUINO_M5Stick_C_Plus2)  || defined(ARDUINO_M5Stack_Tough)
 // Values used when M5StickC, M5STickCPlus or M5Stick_C_Plus2 environment is selected:
@@ -104,7 +104,7 @@
 //#include "def/Altherma(ERGA D EHV-EHB-EHVZ DJ series 04-08 kW).h"
 //#include "def/Altherma(ERGA E EHSH-X P30-50 E_EF series 04-08kW-ECH2O).h"
 //#include "def/Altherma(ERGA E EHV-EHB-EHVZ E_EJ series 04-08kW).h"
-//#include "def/Altherma(ERLA D EBSH-X 16P30-50 D SERIES 11-16kW-ECH2O).h"
+#include "def/Altherma(ERLA D EBSH-X 16P30-50 D SERIES 11-16kW-ECH2O).h"
 //#include "def/Altherma(ERLA D EBV-EBB-EBVZ D SERIES 11-16kW).h"
 //#include "def/Altherma(ERLA03 D EHFH-EHFZ DJ series 3kW).h"
 //#include "def/Altherma(Hybrid).h"
